@@ -19,7 +19,7 @@
     }
 
     .main .box {
-        height: 75vh;
+        height: 100vh;
         width: 100%;
         opacity: 0.75;
         background-color: black;
@@ -34,13 +34,15 @@
         align-items: center;
         justify-content: space-between;
         /* justify-content: center; */
-        height: 65px;
+        height: 100px;
+
         /* z-index: 1; */
     }
 
+
     nav img {
         color: red;
-        width: 140px;
+        width: 145px;
         position: relative;
         z-index: 1;
     }
@@ -57,7 +59,7 @@
     .top-front {
         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
         color: white;
-        height: calc(100% - 65px);
+        height: calc(100% - 100px);
         position: relative;
         display: flex;
         align-items: center;
@@ -77,20 +79,23 @@
     }
 
     .btn {
-        padding: 3px 8px;
+        padding: 5px 34px;
         /* font-weight: bold; */
-        background-color: rgba(245, 237, 237, 0.27);
-        /* border: 1px solid white; */
+        background-color: rgba(245, 237, 237, 0);
+        border: 1px solid rgba(255, 255, 255, 0.3);
         color: white;
-        border-radius: 4px;
-        cursor: pointer
+        border-radius: 8px;
+        cursor: pointer;
+        font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        gap: 25px;
     }
 
     .top-front-buttons {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 20px;
     }
 
     .btn-red {
@@ -125,6 +130,7 @@
 
     .first {
         display: flex;
+        /* position: relative; */
         justify-content: center;
         align-items: center;
         max-width: 70vw;
@@ -149,37 +155,38 @@
         right: 20px;
     }
 
-    .sGames video{
+    .sGames video {
         position: absolute;
         top: 50px;
         right: 118px;
         width: 350px;
     }
 
-    .first div{
+    .first div {
         display: flex;
         flex-direction: column;
     }
 
-    .first > div :nth-child(1){
+    .first>div :nth-child(1) {
         font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
         font-weight: 900;
         font-size: 48px;
+        z-index: 1;
     }
 
-    .first > div :nth-child(2){
+    .first>div :nth-child(2) {
         font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
         font-weight: 400;
         font-size: 24px;
     }
 
-    .faq{
+    .faq {
         background-color: black;
         color: rgb(255, 255, 255);
         padding: 34px;
     }
 
-    .faq h2{
+    .faq h2 {
         text-align: center;
         font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
         font-weight: 900;
@@ -187,10 +194,10 @@
         padding: 20px;
     }
 
-    .dropdown{
+    .dropdown {
         display: flex;
         padding: 24px;
-        margin:10px auto;
+        margin: 10px auto;
         max-width: 60vw;
         background-color: rgb(61, 58, 58);
         color: white;
@@ -199,42 +206,43 @@
         cursor: pointer;
         font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
         font-size: 24px;
-        font-weight: 400;   
+        font-weight: 400;
     }
 
-    .dropdown:hover{
+    .dropdown:hover {
         background-color: rgb(86, 84, 84);
-        transition: all 0.5s ease-out;;
+        transition: all 0.5s ease-out;
+        ;
         color: white;
     }
 
-    footer{
-        color:rgba(255, 255, 255, 0.7);
+    footer {
+        color: rgba(255, 255, 255, 0.7);
         max-width: 60vw;
         justify-content: center;
         margin: auto;
         padding: 25px;
         /* text-align: center; */
     }
-    
-    .footer{
+
+    .footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         padding: 30px;
         /* color: white; */
     }
 
-    .footer span{
+    .footer span {
         padding: 0px 25px;
     }
 
-    .footer-list{
+    .footer-list {
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
 
-    .footer a{
+    .footer a {
         text-decoration: underline;
         color: rgba(255, 255, 255, 0.7);
         font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
