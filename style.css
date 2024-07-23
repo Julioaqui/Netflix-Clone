@@ -149,6 +149,13 @@
         right: 20px;
     }
 
+    .sGames video{
+        position: absolute;
+        top: 50px;
+        right: 118px;
+        width: 350px;
+    }
+
     .first div{
         display: flex;
         flex-direction: column;
@@ -199,4 +206,38 @@
         background-color: rgb(86, 84, 84);
         transition: all 0.5s ease-out;;
         color: white;
+    }
+
+    footer{
+        color:rgba(255, 255, 255, 0.7);
+        max-width: 60vw;
+        justify-content: center;
+        margin: auto;
+        padding: 25px;
+        /* text-align: center; */
+    }
+    
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 30px;
+        /* color: white; */
+    }
+
+    .footer span{
+        padding: 0px 25px;
+    }
+
+    .footer-list{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer a{
+        text-decoration: underline;
+        color: rgba(255, 255, 255, 0.7);
+        font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
     }
