@@ -1,13 +1,13 @@
-    *{
+    * {
         padding: 0;
         margin: 0;
     }
 
-    body{
+    body {
         background-color: black;
     }
-    
-    .main{
+
+    .main {
         height: 75vh;
         background-size: max(1200px, 100vw);
         /* background-size: 100vw; So that when we resize it, it stays on the sides  */
@@ -18,16 +18,16 @@
         /* width: 100vw; */
     }
 
-    .main .box{
+    .main .box {
         height: 75vh;
         width: 100%;
-        opacity: 0.45;
+        opacity: 0.75;
         background-color: black;
         position: absolute;
         top: 0;
     }
 
-    nav{
+    nav {
         max-width: 60vw;
         margin: auto;
         display: flex;
@@ -35,35 +35,86 @@
         justify-content: space-between;
         /* justify-content: center; */
         height: 65px;
+        /* z-index: 1; */
     }
 
-    nav img{
+    nav img {
         color: red;
         width: 140px;
         position: relative;
         z-index: 1;
     }
 
-    nav button{
+    nav button {
         position: relative;
         z-index: 1;
     }
 
-    .box{
+    .box {
         color: white;
     }
 
-    .starting{
+    .top-front {
         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
         color: white;
-        height: 100%;
+        height: calc(100% - 65px);
         position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         gap: 25px;
-        padding: 30px;
+        padding: 0 30px;
         text-align: center;
     }
 
+
+    .line {
+        height: 8px;
+        background-color: gray;
+        opacity: 0.35;
+    }
+
+    .btn {
+        padding: 3px 8px;
+        font-weight: bold;
+        background-color: rgba(245, 237, 237, 0.27);
+        /* border: 1px solid white; */
+        /* color: white; */
+    }
+
+    .top-front-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .btn-red {
+        background-color: red;
+        color: white;
+        font-size: 24px;
+        padding: 8px 30px;
+        border-radius: 5px;
+        /* height: 48px; */
+        /* font-style: normal; */
+        /* border-radius: 10px; */
+    }
+
+    .btn-red-sm {
+        background-color: red;
+        color: white;
+    }
+
+    .main input {
+        padding: 15px 155px 15px 12px;
+        border-radius: 5px;
+        font-size: 14px;
+        /* opacity: 0.1; */
+        background-color: rgb(23, 23, 23, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        font-weight: 900;
+        /* height: 40px; */
+    }
+
+    
