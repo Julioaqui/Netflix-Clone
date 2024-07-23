@@ -73,14 +73,17 @@
         height: 8px;
         background-color: gray;
         opacity: 0.35;
+        z-index: 1;
     }
 
     .btn {
         padding: 3px 8px;
-        font-weight: bold;
+        /* font-weight: bold; */
         background-color: rgba(245, 237, 237, 0.27);
         /* border: 1px solid white; */
-        /* color: white; */
+        color: white;
+        border-radius: 4px;
+        cursor: pointer
     }
 
     .top-front-buttons {
@@ -96,6 +99,7 @@
         font-size: 24px;
         padding: 8px 30px;
         border-radius: 5px;
+        font-weight: 600;
         /* height: 48px; */
         /* font-style: normal; */
         /* border-radius: 10px; */
@@ -113,8 +117,86 @@
         /* opacity: 0.1; */
         background-color: rgb(23, 23, 23, 0.2);
         border: 1px solid rgba(255, 255, 255, 0.2);
+        color: white;
         font-weight: 900;
         /* height: 40px; */
     }
 
-    
+
+    .first {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 70vw;
+        margin: auto;
+        color: white;
+        margin-top: 10px;
+    }
+
+    .secImg {
+        position: relative;
+    }
+
+    .secImg img {
+        width: 30vw;
+        position: relative;
+        z-index: 1;
+    }
+
+    .secImg video {
+        position: absolute;
+        top: 90px;
+        right: 20px;
+    }
+
+    .first div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first > div :nth-child(1){
+        font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+        font-weight: 900;
+        font-size: 48px;
+    }
+
+    .first > div :nth-child(2){
+        font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+    }
+
+    .faq{
+        background-color: black;
+        color: rgb(255, 255, 255);
+        padding: 34px;
+    }
+
+    .faq h2{
+        text-align: center;
+        font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+        font-weight: 900;
+        font-size: 48px;
+        padding: 20px;
+    }
+
+    .dropdown{
+        display: flex;
+        padding: 24px;
+        margin:10px auto;
+        max-width: 60vw;
+        background-color: rgb(61, 58, 58);
+        color: white;
+        /* margin: auto; */
+        justify-content: space-between;
+        cursor: pointer;
+        font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+        font-size: 24px;
+        font-weight: 400;   
+    }
+
+    .dropdown:hover{
+        background-color: rgb(86, 84, 84);
+        transition: all 0.5s ease-out;;
+        color: white;
+    }
