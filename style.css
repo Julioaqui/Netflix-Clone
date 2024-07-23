@@ -39,6 +39,10 @@
         /* z-index: 1; */
     }
 
+    .nav-buttons{
+        display: flex;
+        gap: 20px;
+    }
 
     nav img {
         color: red;
